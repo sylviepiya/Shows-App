@@ -10,7 +10,7 @@ import java.util.TimerTask;
 
 public class Splash extends AppCompatActivity {
 
-    /*@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
@@ -19,10 +19,10 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                startActivity(new Intent(Splash.this, MainActivity.class));
+                startActivity(new Intent(Splash.this, ItemListActivity.class));
             }
         };
         Timer opening = new Timer();
-        opening.schedule(task, 3000);
-    }*/
+        opening.schedule(task, 5000);
+    }
 }
